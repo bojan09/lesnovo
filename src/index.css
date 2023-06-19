@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
@@ -80,102 +81,30 @@ select {
   }
 }
 
-
-.sponsors_img_filter {
-  filter: brightness(0);
-  opacity: 50%;
-}
-
-/* Slider Animation */
-.scroll-parent {
+.header {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  height: 100vh;
+  width: 100vw;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../src/assets/hero-img.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../src/assets/hero-img.jpg);
+  background-size: cover;
+  background-position: center;
   position: relative;
-  width: 100%;
-  height: 1.4rem;
-  overflow: hidden;
 }
 
-.scroll-element {
-  display: flex;
-  gap: 2px;
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  left: 0%;
-  top: 0%;
-}
-
-.primary {
-  animation: primary 10s linear infinite;
-}
-
-.secondary {
-  animation: secondary 10s linear infinite;
-}
-
-@keyframes primary {
-  from {
-    left: 0%;
-  }
-
-  to {
-    left: -100%;
+@media screen and (max-width:600px) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 100vh;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../src/assets/hero-img.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../src/assets/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
 }
 
-@keyframes secondary {
-  from {
-    left: 100%;
-  }
 
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes primary {
-  from {
-    left: 0%;
-  }
-
-  to {
-    left: -100%;
-  }
-}
-
-/* Phone app Steps */
-.step-img-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.step-img-box::before,
-.step-img-box::after {
-  content: "";
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.step-img-box::before {
-  /* 60% of parent's width */
-  width: 60%;
-  padding-bottom: 60%;
-  background-color: hsl(19, 91%, 90%);
-  z-index: -2;
-}
-
-.step-img-box::after {
-  width: 45%;
-  padding-bottom: 45%;
-  background-color: hsl(5, 82%, 88%);
-  z-index: -1;
-}
-
-.bg {
-  color: hsl(124, 100%, 95%);
-}
+/* Hero button */
