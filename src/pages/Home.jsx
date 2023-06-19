@@ -5,7 +5,7 @@ import heroImg from "../assets/hero2.jpg";
 
 const Home = () => {
   return (
-    <div className="header  rounded-md ">
+    <div className="hero rounded-md ">
       <div className="grid place-items-center gap-6 pt-[35vh]">
         <h1 className="text-white md:text-8xl xs:text-2xl uppercase tracking-[2rem] xs:tracking-[1.5rem]">
           Lesnovo
