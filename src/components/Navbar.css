@@ -4,7 +4,7 @@
 
 
 .navigation__button {
-    background-color: #bdffac;
+    background-color: #fff;
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -76,12 +76,14 @@
     margin-right: 1.5rem;
     display: inline-block;
     font-weight: bold;
+    font-family: 'Work Sans';
+
 }
 
 .navigation__link:hover,
 .navigation__link:active {
     background-position: 100%;
-    color: #000;
+    color: #666;
     transform: translateX(1rem);
 }
 
@@ -103,43 +105,7 @@
     margin-top: 3.5rem;
 }
 
-.navigation__icon {
-    width: 3rem;
-    height: 3px;
-    background-color: #2b2d42;
-    display: inline-block;
-}
 
-.navigation__icon::before {
-    width: 3rem;
-    height: 3px;
-    background-color: #2b2d42;
-    display: inline-block;
-}
-
-.navigation__icon::after {
-    width: 3rem;
-    height: 3px;
-    background-color: #2b2d42;
-    display: inline-block;
-}
-
-
-.navigation__icon::before,
-.navigation__icon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    transition: all .2s;
-}
-
-.navigation__icon::before {
-    top: -.8rem;
-}
-
-.navigation__icon::after {
-    top: .8rem;
-}
 
 .navigation__button:hover .navigation__icon::before {
     top: -1rem;
@@ -181,7 +147,7 @@
     }
 
     .navigation__button {
-        background-color: #bdffac;
+        background-color: #fff;
         height: 4.55rem;
         width: 4.5rem;
         position: fixed;

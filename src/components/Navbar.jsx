@@ -7,6 +7,7 @@ import close from "../assets/close.svg";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
   return (
     <div className="navigation">
       <input
@@ -31,7 +32,7 @@ const Navbar = () => {
       <div className="navigation__background">&nbsp;</div>
 
       <nav className="navigation__nav">
-        <ul className={`${!toggle ? "none" : "block"}  navigation__list`}>
+        <ul className="navigation__list">
           <li className="navigation__item" onClick={() => setToggle(!toggle)}>
             <a href="#about" className="navigation__link">
               <span>01</span>About Natous
