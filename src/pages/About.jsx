@@ -48,12 +48,12 @@ const About = () => {
           <img
             src={img_2}
             alt="img_2"
-            className="ml-[40%] mt-[-20%] sm:mt-[35%] sm:ml-[-5%] sm:w-[350px] sm:h-[350px] w-[150px] h-[150px] rounded-lg hover:z-10 scale-100 hover:scale-105 transition-all duration-200 ease-in-out"
+            className="ml-[40%] mt-[-20%] lg:mt-[35%] lg:ml-[-5%] sm:mt-[70%] sm:ml-[-70%] sm:w-[350px] sm:h-[350px] w-[150px] h-[150px] rounded-lg hover:z-10 scale-100 hover:scale-105 transition-all duration-200 ease-in-out"
           />
           <img
             src={img_3}
             alt="img_3"
-            className="ml-[20%] mt-[-15%] sm:ml-[-50%] sm:mt-[5%] sm:w-[350px] sm:h-[350px]  w-[150px] h-[150px] rounded-lg hover:z-10 scale-100 hover:scale-105 transition-all duration-200 ease-in-out"
+            className="ml-[20%] mt-[-15%] lg:ml-[-50%] lg:mt-[5%] sm:ml-[-125%] sm:mt-[150%] sm:w-[350px] sm:h-[350px]  w-[150px] h-[150px] rounded-lg hover:z-10 scale-100 hover:scale-105 transition-all duration-200 ease-in-out"
           />
         </div>
       </div>
