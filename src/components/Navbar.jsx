@@ -8,10 +8,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="">
+    <div className="relative">
       <img
         src={!toggle ? menu : close}
-        className="w-[70px] h-[70px] object-contain cursor-pointer fixed right-6 top-5 sm:right-8 sm:top-7 lg:right-[4rem] lg:top-[3rem] bg-slate-100 p-4 rounded-full z-10"
+        className="w-[70px] h-[70px] object-contain cursor-pointer fixed right-6 top-5 sm:right-8 sm:top-7 lg:right-[4rem] lg:top-[3rem] bg-slate-100 p-4 rounded-full z-20"
         alt="nav menu"
         onClick={() => setToggle(!toggle)}
       />
@@ -19,7 +19,7 @@ const Navbar = () => {
       <ul
         className={
           toggle
-            ? "grid justify-center items-center bg-gradient-to-br from-primaryDarkColor to-primaryLightColor h-[100vh] w-[100vw] z-10 py-[8rem] xs:text-[1.75rem] sm:text-[2rem]"
+            ? "nav_background_transition grid justify-center items-center bg-gradient-to-br from-primaryDarkColor to-primaryLightColor h-[100vh] w-[100vw] z-10 py-[8rem] xs:text-[1.75rem] sm:text-[2rem] fixed top-0 left-0"
             : "hidden"
         }
       >

@@ -7,45 +7,64 @@ import snowAdventurer from "../assets/tours/winter_explorer.jpg";
 
 const Tours = () => {
   return (
-    <div className="text-center my-[5rem]">
+    <div className=" text-center my-[5rem]">
       <h1 className="primary-heading sm:text-4xl xs:text-xl font-semibold my-[2rem]">
-        EXCITING TOURS FOR ADVENTUROUS PEOPLE
+        MOST POPULAR TOURS
       </h1>
 
-      {/* The cave Explorer */}
-      <div>
-        <img src={mountainBiker} alt="mountainBiker" />
-        <h1>The mountain biker</h1>
-        <div>
-          <p>3 day tours</p>
-          <p>Up to 10 people</p>
-          <p>2 tour guides</p>
-          <p>Sleep in cozy hotel</p>
-          <p>Difficulty: easy</p>
+      {/* Container */}
+      <div className="flex justify-evenly items-center">
+        {/* The cave Explorer */}
+        <div className="flex flex-col px-4">
+          {/* Image */}
+          <div className="popular_tours_img mountain_biker relative">
+            <h1 className="absolute bottom-[3.2rem] right-2 bg-gradient-to-b from-secondaryLightColor to-secondaryDarkColor xs:text-2xl md:text-3xl uppercase p-2 text-white text-left font-light opacity-80">
+              The mountain biker
+            </h1>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3 mb-12 mt-5">
+            <p className="border-b-2 pb-1 w-[90%] mb-1">3 day tours</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">Up to 10 people</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">2 tour guides</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">Sleep in cozy hotel</p>
+            <p className="mb-1">Difficulty: easy</p>
+          </div>
         </div>
-      </div>
-      {/* The forest Hiker */}
-      <div>
-        <img src={forestHiker} alt="forestHiker" />
-        <h1>The forest hiker</h1>
-        <div>
-          <p>7 day tours</p>
-          <p>Up to 40 people</p>
-          <p>6 tour guides</p>
-          <p>Sleep in provided tents</p>
-          <p>Difficulty: medium</p>
+        {/* The forest Hiker */}
+        <div className="flex flex-col px-4">
+          {/* Image */}
+          <div className="popular_tours_img forest_hiker relative">
+            <h1 className="absolute bottom-[3.2rem] right-2 bg-gradient-to-b from-primaryDarkColor to-primaryLightColor xs:text-2xl md:text-3xl uppercase p-2 text-white font-light opacity-80">
+              The forest hiker
+            </h1>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3 mb-12 mt-5">
+            <p className="border-b-2 pb-1 w-[90%] mb-1">7 day tours</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">Up to 40 people</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">6 tour guides</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">
+              Sleep in provided tents
+            </p>
+            <p className="mb-1">Difficulty: medium</p>
+          </div>
         </div>
-      </div>
-      {/* The snow Adventurer */}
-      <div>
-        <img src={snowAdventurer} alt="snowAdventurer" />
-        <h1>The snow adventurer</h1>
-        <div>
-          <p>5 day tours</p>
-          <p>Up to 15 people</p>
-          <p>3 tour guides</p>
-          <p>Sleep in provided tents</p>
-          <p>Difficulty: hard</p>
+        {/* The snow Adventurer */}
+        <div className="flex flex-col px-4">
+          {/* Image */}
+          <div className="popular_tours_img snow_adventurer relative">
+            <h1 className="absolute bottom-[3.2rem] right-2 bg-gradient-to-b from-tertiaryDarkColor to-tertiaryLightColor xs:text-2xl md:text-3xl uppercase p-2 text-white font-light opacity-80">
+              The snow adventurer
+            </h1>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3 mb-12 mt-5">
+            <p className="border-b-2 pb-1 w-[90%] mb-1">5 day tours</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">Up to 15 people</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">3 tour guides</p>
+            <p className="border-b-2 pb-1 w-[90%] mb-1">
+              Sleep in provided tents
+            </p>
+            <p className=" mb-1">Difficulty: hard</p>
+          </div>
         </div>
       </div>
     </div>
